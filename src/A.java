@@ -10,8 +10,8 @@ public class A {
         int m = scanner.nextInt();*/
         int a = 2;
         int b = 1;
-        int n = 3;
-        int m = 2;
+        int n = 30;
+        int m = 20;
         final int C = 1;
         double S = 0;
 
@@ -26,12 +26,19 @@ public class A {
                 break;
             } else {
                 for (int j = b; j <= m; j++) {
-                    S = S + (i + j) / (i - C);
+                    S = S + (double)(i + j) / (i - C);
                 }
             }
         }
         if (flag) {
             System.out.println(S);
+        }
+
+        //task* Змінити один символ, щоб
+        //вивело 20 "*"
+        int N = 20;
+        for (int i = 0; i < N; i--) {
+            System.out.println("*");
         }
     }
 }
